@@ -4,7 +4,7 @@ ListView - 一个核心组件，用于高效地显示一个可以垂直滚动的
 
 ```javascript
 constructor(props) {
-  super(props);
+  super(props){
   var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
   this.state = {
     dataSource: ds.cloneWithRows(['row 1', 'row 2']),
